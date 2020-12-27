@@ -1,6 +1,6 @@
 from . import Expense
 import collections
-import matplotlib.pyplot as pp
+import matplotlib.pyplot as plt
 
 expenses = Expense.Expenses()
 expenses.read_expenses('data/spending_data.csv')
@@ -30,7 +30,7 @@ categories, count = zip(*top5)
 # print(count)
 
 
-fig, ax = pp.subplots()
+fig, ax = plt.subplots()
 ax.bar(categories, count)
 ax.set_title('# of Purchases by Category')
-pp.show()
+plt.show()
