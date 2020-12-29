@@ -28,7 +28,6 @@ class BudgetList:
         return self
 
     def __next__(self):
-        print('Inside next')
         try:
             return self.iter_e.__next__()
         except StopIteration:
